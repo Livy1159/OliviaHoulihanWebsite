@@ -1,0 +1,160 @@
+@import '../variables';
+
+.resume {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: $spacing-2xl $spacing-lg;
+}
+
+.header {
+  margin-bottom: $spacing-2xl;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 $spacing-md 0;
+  text-transform: uppercase;
+}
+
+.summary {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: $spacing-lg;
+  color: $text-light;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-md;
+  font-size: 14px;
+  color: $muted;
+
+  a {
+    color: $brand;
+    text-decoration: underline;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.section {
+  margin-bottom: $spacing-2xl;
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: $spacing-lg;
+    color: $brand;
+  }
+}
+
+.card {
+  background: $panel;
+  border: 1px solid $border;
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-lg;
+
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 $spacing-xs 0;
+  }
+
+  ul {
+    margin: $spacing-sm 0 0 20px;
+  }
+
+  p {
+    margin: $spacing-xs 0;
+  }
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: $spacing-md;
+  margin-bottom: $spacing-sm;
+  flex-wrap: wrap;
+}
+
+.dates {
+  color: $muted;
+  font-size: 14px;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.muted {
+  color: $muted;
+  font-size: 14px;
+}
+
+.links {
+  display: flex;
+  gap: $spacing-md;
+  margin-top: $spacing-sm;
+
+  a {
+    color: $brand;
+    text-decoration: underline;
+    font-size: 14px;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: $spacing-lg;
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: $spacing-sm;
+    color: $brand;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: $spacing-xs;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .resume {
+    padding: $spacing-xl $spacing-md;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+  }
+
+  .dates {
+    white-space: normal;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
