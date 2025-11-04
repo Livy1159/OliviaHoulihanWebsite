@@ -14,13 +14,13 @@ export default function Navigation() {
       </Link>
       <div className={styles.links}>
         <Link href="/" className={pathname === '/' ? styles.active : ''}>
-          Home
+          About Me
         </Link>
         <Link href="/resume" className={pathname === '/resume' ? styles.active : ''}>
           Resume
         </Link>
         <Link href="/about" className={pathname === '/about' ? styles.active : ''}>
-          How this was built
+          About This Site
         </Link>
       </div>
     </nav>
