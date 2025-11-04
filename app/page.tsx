@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import styles from './page.module.scss';
+import TechAnimation from './components/TechAnimation';
 
 export default function HomePage() {
   return (
     <main className={styles.container}>
+      <TechAnimation />
       <section className={styles.content}>
         <h1 className={styles.title}>Olivia Houlihan</h1>
         <p className={styles.subtitle}>Software Engineer</p>

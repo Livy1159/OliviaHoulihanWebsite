@@ -5,12 +5,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .content {
   max-width: 900px;
   padding: $spacing-2xl $spacing-xl;
   text-align: center;
+  position: relative;
+  z-index: 2;
 
   @media (max-width: $breakpoint-mobile) {
     padding: $spacing-xl $spacing-lg;

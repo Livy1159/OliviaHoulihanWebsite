@@ -1,0 +1,89 @@
+@import '../variables';
+
+.animationContainer {
+  position: fixed;
+  top: 80px; // Account for navigation bar
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 80px);
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.floatingElement {
+  position: absolute;
+  bottom: -50px;
+  font-family: 'Courier New', monospace;
+  font-size: 24px;
+  color: #BF00FF; // Neon purple
+  font-weight: 600;
+  user-select: none;
+  animation: floatUp linear infinite;
+  white-space: nowrap;
+  text-shadow: 0 0 10px #BF00FF, 0 0 20px #BF00FF, 0 0 30px #BF00FF;
+
+  // Add some variation to sizes
+  &:nth-child(odd) {
+    font-size: 20px;
+    color: #C77DFF; // Lighter neon purple
+    text-shadow: 0 0 8px #C77DFF, 0 0 16px #C77DFF;
+  }
+
+  &:nth-child(3n) {
+    font-size: 28px;
+    color: #9D00FF; // Deeper neon purple
+    text-shadow: 0 0 12px #9D00FF, 0 0 24px #9D00FF, 0 0 36px #9D00FF;
+  }
+
+  &:nth-child(4n) {
+    font-size: 18px;
+    color: #D946EF; // Bright neon purple
+    text-shadow: 0 0 8px #D946EF, 0 0 16px #D946EF;
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.8;
+  }
+  95% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+// Reduce animation on mobile for performance
+@media (max-width: $breakpoint-mobile) {
+  .floatingElement {
+    font-size: 18px;
+
+    &:nth-child(odd) {
+      font-size: 16px;
+    }
+
+    &:nth-child(3n) {
+      font-size: 20px;
+    }
+
+    &:nth-child(4n) {
+      font-size: 14px;
+    }
+  }
+}
+
+// Reduce motion for users who prefer it
+@media (prefers-reduced-motion: reduce) {
+  .floatingElement {
+    animation: none;
+    opacity: 0;
+  }
+}
+
