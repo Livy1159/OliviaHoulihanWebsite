@@ -47,6 +47,7 @@
   max-width: 72ch;
   margin: 0 auto $spacing-2xl;
   color: $text-light;
+  text-align: left;
 
   @media (max-width: $breakpoint-mobile) {
     font-size: 18px;

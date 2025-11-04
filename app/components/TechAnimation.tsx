@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import styles from './TechAnimation.module.scss';
 
-// Tech symbols that will float in the background
 const techSymbols = ['{}', '<>', '[]', '()', '=>', '//', 'const', 'let', 'fn', '{}', '<>', '[]'];
 
 interface FloatingElement {
@@ -18,13 +17,12 @@ export default function TechAnimation() {
   const [elements, setElements] = useState<FloatingElement[]>([]);
 
   useEffect(() => {
-    // Generate floating elements with random positions and timings
     const newElements: FloatingElement[] = techSymbols.map((symbol, index) => ({
       id: index,
       symbol,
-      left: Math.random() * 100, // Random horizontal position (0-100%)
-      delay: Math.random() * 5, // Random delay (0-5s)
-      duration: 15 + Math.random() * 10, // Random duration (15-25s)
+      left: Math.random() * 100,
+      delay: Math.random() * 5,
+      duration: 15 + Math.random() * 10,
     }));
 
     setElements(newElements);

@@ -1,6 +1,5 @@
 @import 'variables';
 
-// CSS Variables for runtime access
 :root {
   --bg: #{$bg};
   --panel: #{$panel};
@@ -11,7 +10,6 @@
   --border: #{$border};
 }
 
-// Base styles
 * {
   box-sizing: border-box;
 }
@@ -34,7 +32,6 @@ a {
   text-decoration: none;
 }
 
-// Shared utility classes
 h1,
 h2,
 h3 {
