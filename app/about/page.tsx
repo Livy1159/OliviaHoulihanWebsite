@@ -27,6 +27,8 @@ docker run -p 3000:3000 olivia-website</pre>
         You can later wire CI/CD to build and push the image to a registry and deploy on your
         platform of choice (e.g., Fly.io, Render, AWS, GCP, Azure, or a VPS).
       </p>
+      <h2>Github Repo</h2>
+      <a href="https://github.com/Livy1159/OliviaHoulihanWebsite" target="_blank" rel="noopener noreferrer">https://github.com/Livy1159/OliviaHoulihanWebsite</a>
     </main>
   );
 }

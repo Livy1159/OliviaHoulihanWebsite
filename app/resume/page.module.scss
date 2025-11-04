@@ -39,6 +39,11 @@
     &:hover {
       color: $accent;
     }
+
+    &[href*='github']:hover {
+      color: #BF00FF;
+      text-shadow: 0 0 10px #BF00FF, 0 0 20px #BF00FF;
+    }
   }
 }
 
@@ -110,6 +115,11 @@
 
     &:hover {
       color: $accent;
+    }
+
+    &[href*='github']:hover {
+      color: #BF00FF;
+      text-shadow: 0 0 10px #BF00FF, 0 0 20px #BF00FF;
     }
   }
 }
