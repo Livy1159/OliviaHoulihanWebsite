@@ -10,6 +10,10 @@ export default function AboutBuildPage() {
         This site uses Next.js (App Router) and React with TypeScript. It is containerized with a
         multi-stage Dockerfile for efficient production builds and a small runtime image.
       </p>
+      <p>
+        This website was built with assistance from Cursor, an AI-powered coding assistant, to work effectively with modern AI development
+        tools to accelerate development while maintaining code quality and best practices.
+      </p>
       <h2>Key details</h2>
       <ul>
         <li>Framework: Next.js 14, React 18</li>
