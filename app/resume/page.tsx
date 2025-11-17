@@ -10,10 +10,7 @@ export default function ResumePage() {
       <header className={styles.header}>
         <h1 className={styles.name}>OLIVIA HOULIHAN</h1>
         <p className={styles.summary}>
-          Motivated and confident individual who found passion in programming at Dev Bootcamp. Proven
-          leader who integrates well into new teams with different technical backgrounds and cultures.
-          Looking to contribute to a company as a developer using agile techniques for developing great
-          products while continuing to learn in a tech environment.
+          Motivated and confident individual who finds passion in programming Agile teams. Proven leader who integrates well into new teams with different technical & product backgrounds and cultures. Looking to contribute to a company as a developer using agile techniques for developing great products while continuing to learn in a tech-first environment.
         </p>
         <div className={styles.contact}>
           <div>Austin, Texas</div>
@@ -98,7 +95,7 @@ export default function ResumePage() {
           <ul>
             <li>
               Completed 1000+ hours in an immersive agile full-stack web development certification program
-              while learning problem solving as well as the core values associated with engineering empathy.
+              while learning problem-solving as well as the core values associated with engineering empathy.
             </li>
             <li>Developed multi-page web applications using MVC patterns.</li>
             <li>Integrated user authentication and worked with backend database architecture.</li>
@@ -133,7 +130,7 @@ export default function ResumePage() {
             <h3>Olivia Houlihan Website</h3>
           </div>
           <p>
-          Web application for housing resume and information about myself as a software engineer. Built with Next.js, React with Typescript, and Docker.
+          Web application for housing resume and information about myself as a software engineer. Built with Next.js, React with Typescript, and Docker. Cursor (AI-first IDE) was utilized for development, leveraging AI-assisted coding and debugging to complete the project and optimize Typescript component logic rapidly. was utilized for development, leveraging AI-assisted coding and debugging to complete the project and optimize Typescript component logic rapidly.
           </p>
           <div className={styles.links}>
             <a href="https://github.com/Livy1159/OliviaHoulihanWebsite" target="_blank" rel="noopener noreferrer">
@@ -175,6 +172,22 @@ export default function ResumePage() {
             <ul>
               <li>PostgreSQL</li>
               <li>MongoDB</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Project Management Tools</h3>
+            <ul>
+              <li>Jira</li>
+              <li>Pivotal</li>
+              <li>Trello</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Additional</h3>
+            <ul>
+              <li>Mobile web development</li>
+              <li>Accessibility monitoring</li>
+              <li>Performance monitoring (New Relic, Grafana, Sumo Logic, Kubernetes)</li>
             </ul>
           </div>
         </div>
