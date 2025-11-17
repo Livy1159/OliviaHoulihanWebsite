@@ -130,7 +130,7 @@ export default function ResumePage() {
             <h3>Olivia Houlihan Website</h3>
           </div>
           <p>
-          Web application for housing resume and information about myself as a software engineer. Built with Next.js, React with Typescript, and Docker. Cursor (AI-first IDE) was utilized for development, leveraging AI-assisted coding and debugging to complete the project and optimize Typescript component logic rapidly. was utilized for development, leveraging AI-assisted coding and debugging to complete the project and optimize Typescript component logic rapidly.
+          Web application for housing resume and information about myself as a software engineer. Built with Next.js, React with Typescript, and Docker. Cursor (AI-first IDE) was utilized for development, leveraging AI-assisted coding and debugging to complete the project and optimize Typescript component logic rapidly.
           </p>
           <div className={styles.links}>
             <a href="https://github.com/Livy1159/OliviaHoulihanWebsite" target="_blank" rel="noopener noreferrer">
