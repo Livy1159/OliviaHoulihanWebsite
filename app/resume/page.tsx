@@ -9,6 +9,11 @@ export default function ResumePage() {
     <main className={styles.resume}>
       <header className={styles.header}>
         <h1 className={styles.name}>OLIVIA HOULIHAN</h1>
+        <div className={styles.downloadLink}>
+          <a href="/resume.pdf" download className={styles.downloadButton}>
+            Download Resume PDF
+          </a>
+        </div>
         <p className={styles.summary}>
           Motivated and confident individual who finds passion in programming Agile teams. Proven leader who integrates well into new teams with different technical & product backgrounds and cultures. Looking to contribute to a company as a developer using agile techniques for developing great products while continuing to learn in a tech-first environment.
         </p>

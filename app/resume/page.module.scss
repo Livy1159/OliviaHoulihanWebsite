@@ -18,6 +18,26 @@
   text-transform: uppercase;
 }
 
+.downloadLink {
+  margin-bottom: $spacing-lg;
+}
+
+.downloadButton {
+  display: inline-block;
+  padding: $spacing-sm $spacing-lg;
+  background: $brand;
+  color: white;
+  text-decoration: none;
+  border-radius: $radius-md;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background: $accent;
+  }
+}
+
 .summary {
   font-size: 16px;
   line-height: 1.6;
